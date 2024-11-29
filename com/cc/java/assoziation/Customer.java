@@ -15,11 +15,13 @@ public class Customer {
         this.id = id;
         this.name = name;
         this.city = city;
+        Helper.output(this);
     }
 
     /** Assoziation */
     public void initOrder() {
         // Referenz auf erzeugtes Objekt im Heap
+        Helper.output(this);
         order = new Order(1, "repair", this);
     }
 
