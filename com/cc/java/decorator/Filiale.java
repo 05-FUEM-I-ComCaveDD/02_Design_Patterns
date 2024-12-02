@@ -34,6 +34,13 @@ public class Filiale
       coffee3 = new Milk(coffee3);
       Helper.output(coffee3.getDescription() + " $" + coffee3.cost());
 
+      Coffee coffee4 = new SignatureRoast();
+      coffee4 = new Vanilla(coffee4);
+      coffee4 = new Whip(coffee4);
+      coffee4 = new Schoko(coffee4);
+      coffee4 = new Schoko(coffee4);
+      Helper.output(coffee4.getDescription() + " $" + coffee4.cost());
+
       }
 
     
