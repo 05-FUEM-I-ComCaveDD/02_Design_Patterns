@@ -8,6 +8,8 @@ public class App {
 
         // Klassische Instanziierung
 
+        // Singleton obj = new Singleton(); // das geht nicht mehr !
+
         Singleton obj1 = Singleton.getInstance();
         Helper.output(obj1);
 
