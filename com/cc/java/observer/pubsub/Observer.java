@@ -24,15 +24,6 @@ public class Observer implements IObserve{
        s.detatch(this);// Abo beenden
     }
 
-  
-    public boolean isPushed() {
-        return pushed;
-    }
-
-    public void setPushed(boolean pushed) {
-        this.pushed = pushed;
-    }
-
     @Override
     public void update() { // pull
         String str = name + " observes by pull, that subject changed its state to: " + s.getState();
@@ -45,6 +36,13 @@ public class Observer implements IObserve{
         Helper.output(str);
     }
 
+    public boolean isPushed() {
+        return pushed;
+    }
+
+    public void setPushed(boolean pushed) {
+        this.pushed = pushed;
+    }
     
 
 

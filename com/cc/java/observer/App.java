@@ -15,7 +15,7 @@ public static void main(String[] args) {
         Observer ob2 = new Observer(s, "Alice");
         Observer ob3 = new Observer(s, "Maxine");
 
-        // Abonnieren
+        // Bob & Alice abonnieren den Kanal ...
         ob1.subscribe();
         ob2.subscribe();
 
